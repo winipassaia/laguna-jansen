@@ -8,7 +8,7 @@ window.SITE_CONFIG = {
 
   /* Endereço do site depois de publicado.
      É usado para gerar o QR code (página qr.html e seção "Sobre o projeto"). */
-  siteUrl: "https://winipassaia.github.io/lagoa-jasen/",
+  siteUrl: "https://winipassaia.github.io/laguna-jansen/",
 
   /* Dados do projeto escolar. O que ficar vazio não aparece no site. */
   projeto: {
