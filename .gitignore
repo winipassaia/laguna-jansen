@@ -1,0 +1,11 @@
+# Versão antiga do site e foto de origem desconhecida (não publicar)
+_antigo/
+
+# Configuração local de ferramentas
+.claude/
+
+# Arquivos do sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+__pycache__/
