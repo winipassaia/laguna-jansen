@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lagoa da Jansen · São Luís, Maranhão</title>
+<meta name="description" content="Tudo sobre a Lagoa da Jansen, em São Luís (MA): história, ciência, natureza, o que fazer, mapa e como chegar. Projeto da Feira de Ciências Maktub.">
+<meta name="theme-color" content="#141b45">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Lagoa da Jansen · São Luís, Maranhão">
+<meta property="og:description" content="História, ciência, natureza e como chegar à Lagoa da Jansen. Projeto da Feira de Ciências Maktub.">
+<meta property="og:url" content="https://winipassaia.github.io/lagoa-jasen/">
+<meta property="og:image" content="https://winipassaia.github.io/lagoa-jasen/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://winipassaia.github.io/lagoa-jasen/">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="assets/img/icone.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ================= CABEÇALHO FIXO ================= -->
+<header class="cabecalho" id="cabecalho">
+  <a class="marca" href="#inicio" aria-label="Lagoa da Jansen, voltar ao início">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="14" r="7" fill="#f6a23c"/><rect x="3" y="20" width="26" height="3" rx="1.5" fill="#fff7ec"/><rect x="7" y="25" width="18" height="2.4" rx="1.2" fill="#fff7ec" opacity=".6"/></svg>
+    <span>Lagoa da Jansen</span>
+  </a>
+  <button class="botao-menu" type="button" aria-expanded="false" aria-controls="menu">
+    <span class="botao-menu-icone" aria-hidden="true"></span>Menu
+  </button>
+  <nav aria-label="Principal">
+    <ul class="menu" id="menu">
+      <li><a href="#sobre">A lagoa</a></li>
+      <li><a href="#historia">História</a></li>
+      <li><a href="#ciencia">Ciência</a></li>
+      <li><a href="#natureza">Natureza</a></li>
+      <li><a href="#passeio">O que fazer</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#como-chegar">Como chegar</a></li>
+      <li><a href="#duvidas">Dúvidas</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ================= CAPA ================= -->
+<section class="capa" id="inicio" aria-labelledby="titulo-capa">
+  <img class="capa-foto"
+       src="assets/img/fotos/capa-por-do-sol-g.webp"
+       srcset="assets/img/fotos/capa-por-do-sol-p.webp 800w, assets/img/fotos/capa-por-do-sol-g.webp 2000w"
+       sizes="100vw" width="2000" height="1500" alt="" fetchpriority="high">
+  <div class="capa-conteudo">
+    <p class="selo"><span>Projeto escolar</span> <span data-config="feira">Feira de Ciências Maktub</span></p>
+    <p class="local">São Luís · Maranhão</p>
+    <h1 id="titulo-capa">Lagoa da Jansen</h1>
+    <p class="lead">Uma lagoa que nasceu de um aterro, virou cartão-postal e hoje é um laboratório a céu aberto, onde dá pra ver de perto a briga entre a cidade e o mangue.</p>
+    <div class="acoes">
+      <a class="btn btn-principal" href="#sobre">Conhecer a lagoa</a>
+      <a class="btn btn-sec" href="#como-chegar">Ver no mapa</a>
+    </div>
+  </div>
+  <p class="credito-capa">Foto: Lyssuel Calvet · <a href="https://creativecommons.org/licenses/by/2.0/deed.pt-br">CC BY 2.0</a></p>
+</section>
+
+<main id="conteudo">
+
+<!-- ================= SOBRE ================= -->
+<section class="secao escura" id="sobre" aria-labelledby="t-sobre">
+  <div class="miolo duas-colunas">
+    <div>
+      <p class="sobretitulo">A lagoa</p>
+      <h2 id="t-sobre">Uma lagoa feita pela cidade</h2>
+      <p>A Lagoa da Jansen fica no noroeste de São Luís, entre os bairros Ponta d’Areia, São Francisco, Renascença e Ponta do Farol, a cerca de 4 km do Centro Histórico.</p>
+      <p>Ela não é natural. Até os anos 1970, ali havia um manguezal cortado por igarapés e banhado pelas marés. Quando a Avenida Ana Jansen foi construída sobre um aterro, a água ficou represada e formou o espelho d’água que conhecemos hoje.</p>
+      <p>Em 1988 a área virou parque ecológico, para proteger o mangue que sobrou. Hoje ela reúne natureza, esporte, bares e um dos pores do sol mais bonitos da capital.</p>
+    </div>
+    <figure class="foto-moldura">
+      <img src="assets/img/fotos/vista-geral-p.webp"
+           srcset="assets/img/fotos/vista-geral-p.webp 800w, assets/img/fotos/vista-geral-g.webp 1600w"
+           sizes="(min-width: 900px) 45vw, 100vw" width="1600" height="1067" loading="lazy"
+           alt="Vista do alto da lagoa, com ilhas de mangue e prédios da Ponta d’Areia ao fundo">
+      <figcaption>Foto: Douglas Junior / MTur · domínio público</figcaption>
+    </figure>
+  </div>
+  <div class="miolo">
+    <dl class="numeros">
+      <div><dt>150 ha</dt><dd>de área do parque, mais ou menos 200 campos de futebol</dd></div>
+      <div><dt>1 m</dt><dd>de profundidade média (no ponto mais fundo, 3,5 m)</dd></div>
+      <div><dt>169 ha</dt><dd>era o tamanho do manguezal antes do aterro, em 1974</dd></div>
+      <div><dt>~40</dt><dd>espécies de peixes já registradas na lagoa</dd></div>
+      <div><dt>1988</dt><dd>ano em que a área virou parque ecológico</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ================= HISTÓRIA ================= -->
+<section class="secao crepusculo" id="historia" aria-labelledby="t-historia">
+  <div class="miolo">
+    <p class="sobretitulo">História</p>
+    <h2 id="t-historia">De manguezal a cartão-postal</h2>
+    <p class="intro">Cinquenta anos de aterros, leis, obras e cuidados, em ordem.</p>
+    <ol class="linha-tempo">
+      <li><span class="ano">Antes do aterro</span><h3>Era tudo mangue</h3><p>Um manguezal de 169 hectares, cortado pelos igarapés da Jansen e do Jaracati, enchia e esvaziava com as marés.</p></li>
+      <li><span class="ano">Anos 1970</span><h3>O aterro vira barragem</h3><p>A Avenida Maestro João Nunes (hoje Av. Ana Jansen) é construída sobre um aterro que bloqueia o Igarapé da Jansen. A água presa forma a laguna.</p></li>
+      <li><span class="ano">Fim dos anos 1970</span><h3>Quase loteada</h3><p>Uma empresa da prefeitura chegou a lotear e vender ilegalmente cerca de metade do espelho d’água para construir.</p></li>
+      <li class="marco"><span class="ano">1988</span><h3>Nasce o parque</h3><p>A Lei estadual 4.878, de 23 de junho, cria o Parque Ecológico da Lagoa da Jansen, para proteger o que restou do mangue.</p></li>
+      <li><span class="ano">2001</span><h3>A lagoa ganha a cidade</h3><p>Grande urbanização: ciclovia, quadras, concha acústica e mirante. Em dezembro, a escultura da Serpente é colocada na água.</p></li>
+      <li><span class="ano">2012</span><h3>Nova gestão</h3><p>Um decreto passa a gestão da área para a Secretaria de Estado do Meio Ambiente (Sema).</p></li>
+      <li class="marco"><span class="ano">2015 a 2017</span><h3>Despoluição</h3><p>A Caema retira cerca de 70 pontos de esgoto. Com novas redes e estações de bombeamento, 100 litros de esgoto por segundo deixam de cair na lagoa.</p></li>
+      <li><span class="ano">2019</span><h3>Serpente afundando</h3><p>Deteriorada, a escultura da Serpente fica quase toda submersa, com pedaços espalhados pela lagoa.</p></li>
+      <li><span class="ano">2022</span><h3>Problema na comporta</h3><p>Uma comporta cede e o nível da água baixa. O governo identifica um desalinhamento no canal que liga a lagoa ao mar.</p></li>
+      <li><span class="ano">2024 e 2025</span><h3>Revitalização</h3><p>Mais de R$ 20 milhões em obras: Arena Domingos Leal, pista de skate e BMX, quadras, quiosques e a Praça Poeta José Chagas.</p></li>
+      <li class="marco"><span class="ano">2026</span><h3>Serpente de volta e praça inclusiva</h3><p>Em abril, a Serpente restaurada volta à lagoa. Em 7 de junho é inaugurada a Praça Aymar Mesquita, a primeira do Maranhão pensada para crianças com deficiência.</p></li>
+      <li><span class="ano">Novembro de 2026</span><h3>O desafio continua</h3><p>O mau cheiro volta a incomodar. A Caema aponta ligações clandestinas de esgoto na rede de chuva, e moradores criam o grupo Amigos da Lagoa da Jansen.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= CIÊNCIA ================= -->
+<section class="secao clara" id="ciencia" aria-labelledby="t-ciencia">
+  <div class="miolo">
+    <p class="sobretitulo">Ciência</p>
+    <h2 id="t-ciencia">Como a lagoa respira</h2>
+    <p class="intro">A Lagoa da Jansen é, na verdade, uma <strong>laguna</strong>: um corpo de água rasa ligado ao mar. A água dela é <strong>salobra</strong>, uma mistura de água doce (chuva e igarapés) com água salgada. Por isso a lagoa depende do mar para se renovar.</p>
+
+    <div class="simulador" id="simulador">
+      <div class="simulador-controles" role="group" aria-label="Estado da comporta">
+        <button type="button" data-estado="fechada" aria-pressed="true">Comporta fechada</button>
+        <button type="button" data-estado="aberta" aria-pressed="false">Maré alta: comporta aberta</button>
+      </div>
+      <svg class="simulador-svg" viewBox="0 0 800 320" role="img" aria-labelledby="sim-titulo sim-desc">
+        <title id="sim-titulo">Esquema da ligação entre o mar e a lagoa</title>
+        <desc id="sim-desc">À esquerda o mar, no meio o aterro da avenida com um canal e uma comporta, à direita a lagoa com mangue.</desc>
+        <defs>
+          <linearGradient id="g-ceu" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe3ef"/><stop offset="1" stop-color="#f7efe2"/></linearGradient>
+          <linearGradient id="g-mar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a8fb0"/><stop offset="1" stop-color="#145a78"/></linearGradient>
+          <marker id="seta" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#fff"/></marker>
+        </defs>
+        <rect width="800" height="320" fill="url(#g-ceu)"/>
+        <!-- mar -->
+        <g class="sim-mar">
+          <rect x="0" y="190" width="290" height="180" fill="url(#g-mar)"/>
+          <path d="M20 200 q15 -6 30 0 t30 0 M120 206 q15 -6 30 0 t30 0 M200 199 q15 -6 30 0" stroke="#fff" stroke-opacity=".45" stroke-width="2" fill="none"/>
+        </g>
+        <!-- lagoa -->
+        <rect class="sim-lagoa" x="430" y="172" width="370" height="148"/>
+        <path d="M470 184 q12 -5 24 0 t24 0 M560 192 q12 -5 24 0 t24 0 M650 186 q12 -5 24 0 t24 0 M500 214 q12 -5 24 0 t24 0 M620 224 q12 -5 24 0" stroke="#fff" stroke-opacity=".35" stroke-width="2" fill="none"/>
+        <!-- fundo de lama -->
+        <path d="M0 292 Q200 280 300 290 L430 290 Q600 300 800 286 L800 320 L0 320 Z" fill="#6b5a45"/>
+        <!-- aterro / avenida -->
+        <path d="M262 320 L300 140 L430 140 L462 320 Z" fill="#c9b48f"/>
+        <rect x="296" y="132" width="138" height="10" rx="2" fill="#4a4a52"/>
+        <path d="M306 137 h16 M336 137 h16 M366 137 h16 M396 137 h16" stroke="#f6d36b" stroke-width="2"/>
+        <!-- canal sob a avenida -->
+        <rect x="282" y="236" width="170" height="30" fill="#2c4f5c" rx="3"/>
+        <path class="sim-fluxo" d="M290 251 H445" stroke="#fff" stroke-width="3" stroke-dasharray="10 12" marker-end="url(#seta)"/>
+        <!-- comporta -->
+        <rect class="sim-comporta" x="436" y="226" width="12" height="50" fill="#d9527a" rx="2"/>
+        <!-- mangue -->
+        <g class="sim-mangue" fill="#2f6b4a">
+          <ellipse cx="700" cy="140" rx="70" ry="32"/><ellipse cx="760" cy="128" rx="50" ry="28"/><ellipse cx="640" cy="150" rx="40" ry="20"/>
+          <path d="M650 180 q8 -26 18 0 M680 180 q8 -30 18 0 M712 180 q8 -28 18 0 M744 180 q8 -32 18 0 M776 180 q8 -30 18 0" stroke="#3b2a1d" stroke-width="3" fill="none"/>
+        </g>
+        <!-- bolhas de oxigênio -->
+        <g class="sim-bolhas" fill="#fff">
+          <circle cx="500" cy="270" r="4"/><circle cx="540" cy="250" r="3"/><circle cx="585" cy="275" r="5"/><circle cx="620" cy="245" r="3"/><circle cx="560" cy="290" r="3"/>
+        </g>
+        <!-- rótulos -->
+        <g class="sim-rotulos" font-family="Source Sans 3, Segoe UI, sans-serif" font-size="26" font-weight="700">
+          <text x="22" y="44" fill="#0b3a4f">Mar</text>
+          <text x="22" y="74" fill="#0b3a4f" font-weight="600" font-size="21" class="sim-mare">Maré baixa</text>
+          <text x="365" y="120" fill="#4a3a20" font-size="22" text-anchor="middle">Av. Ana Jansen</text>
+          <text x="300" y="258" fill="#fff" font-size="18" font-weight="700">canal</text>
+          <text x="442" y="216" fill="#9c2c50" font-size="20" text-anchor="middle">comporta</text>
+          <text x="778" y="44" fill="#0b3a4f" text-anchor="end">Laguna</text>
+          <text x="778" y="74" fill="#0b3a4f" font-weight="600" font-size="21" text-anchor="end" class="sim-estado-lagoa">Pouco oxigênio</text>
+        </g>
+      </svg>
+      <p class="simulador-legenda" aria-live="polite" id="sim-legenda">Com a comporta fechada, a lagoa segura o seu nível de água, mas a água fica parada. Sem renovação, o oxigênio cai e a sujeira se acumula.</p>
+      <p class="nota">Esquema simplificado e fora de escala. A ligação real é feita por um canal e tubos que passam por baixo da avenida.</p>
+    </div>
+
+    <div class="cartoes-ciencia">
+      <article class="cartao">
+        <h3>A comporta é o “pulmão”</h3>
+        <p>O governo abre e fecha a comporta do vertedouro para a água do mar entrar e sair. Isso renova e oxigena a lagoa. Segundo a Sinfra, as grandes trocas de água acontecem em ciclos de cerca de 28 dias, acompanhando as marés.</p>
+      </article>
+      <article class="cartao">
+        <h3>O mangue é o berçário</h3>
+        <p>Nas raízes do mangue nascem e se escondem peixes, siris e caranguejos. Ele também segura a lama, filtra a água e protege a margem da erosão. Na lagoa há mangue-branco e siriba (mangue-preto).</p>
+      </article>
+      <article class="cartao">
+        <h3>Lagoa ou laguna?</h3>
+        <p>Lagoa é água parada separada do mar. Laguna é água rasa que se comunica com o mar. Pelo critério científico, a Jansen é uma laguna. O nome “lagoa” ficou pelo costume.</p>
+      </article>
+    </div>
+
+    <h3 class="subtitulo" id="t-cheiro">Por que às vezes a lagoa cheira mal?</h3>
+    <p class="intro">O nome do fenômeno é <strong>eutrofização</strong>. Ele acontece em etapas:</p>
+    <ol class="cadeia" aria-labelledby="t-cheiro">
+      <li><span class="cadeia-num">1</span><strong>Esgoto entra</strong><span>Ligações irregulares jogam esgoto na rede de água da chuva, que deságua na lagoa.</span></li>
+      <li><span class="cadeia-num">2</span><strong>Excesso de nutrientes</strong><span>O esgoto traz muito nitrogênio e fósforo, que funcionam como adubo.</span></li>
+      <li><span class="cadeia-num">3</span><strong>As algas explodem</strong><span>Com tanto “adubo”, as algas se multiplicam e deixam a água verde.</span></li>
+      <li><span class="cadeia-num">4</span><strong>As algas morrem</strong><span>Bactérias decompõem as algas mortas e gastam o oxigênio da água.</span></li>
+      <li><span class="cadeia-num">5</span><strong>Falta oxigênio</strong><span>Peixes morrem e surge o cheiro de ovo podre, do gás sulfídrico.</span></li>
+    </ol>
+    <p class="destaque-solucao"><strong>Como quebrar o ciclo:</strong> tirar o esgoto da lagoa, renovar a água pela comporta e preservar o mangue. É exatamente nisso que os trabalhos dos últimos anos se concentram.</p>
+  </div>
+</section>
+
+<!-- ================= CUIDADOS / RECUPERAÇÃO ================= -->
+<section class="secao escura" id="cuidados" aria-labelledby="t-cuidados">
+  <div class="miolo">
+    <p class="sobretitulo">Recuperação</p>
+    <h2 id="t-cuidados">Anos de trabalho para salvar a lagoa</h2>
+    <p class="intro">Desde 2015, governo e companhia de saneamento vêm atacando a raiz do problema. Os números mostram o tamanho do esforço:</p>
+    <div class="progresso">
+      <div class="indicador"><strong>+100</strong><span>pontos de esgoto eliminados da lagoa, segundo a Caema</span></div>
+      <div class="indicador"><strong>100 L/s</strong><span>de esgoto deixaram de cair na água com as obras de 2015 a 2017. É como uma caixa d’água de mil litros a cada 10 segundos.</span></div>
+      <div class="indicador"><strong>4 km+</strong><span>de tubulação e 2 estações de bombeamento levam o esgoto para tratamento na ETE Jaracati</span></div>
+      <div class="indicador"><strong>R$ 20 mi+</strong><span>investidos na revitalização recente do complexo da lagoa</span></div>
+    </div>
+    <div class="duas-colunas alinhar-topo">
+      <div class="cartao cartao-escuro">
+        <h3>O que já melhorou</h3>
+        <ul class="lista-check">
+          <li>O esgoto coletado na região é tratado nas estações Jaracaty e Vinhais.</li>
+          <li>A operação da comporta, segundo o governo, reduziu o mau cheiro e aumentou a quantidade de espécies de peixes.</li>
+          <li>A Sema acompanha a qualidade da água e as espécies que vivem na lagoa.</li>
+          <li>Praças, quadras e calçadões foram recuperados e trouxeram mais famílias para a lagoa.</li>
+        </ul>
+      </div>
+      <div class="cartao cartao-alerta">
+        <h3>O que ainda falta</h3>
+        <p>Em novembro de 2026 o mau cheiro voltou. A rede de esgoto da região já está pronta, mas ainda há imóveis que não se ligaram a ela e ligações clandestinas que jogam esgoto na rede de água da chuva. O canal com o mar também precisou de ajustes. A recuperação avançou, mas depende de todo mundo.</p>
+        <h4>Como você pode ajudar</h4>
+        <ul class="lista-ajuda">
+          <li>Confirme se a sua casa está ligada à rede de esgoto, e não à de chuva.</li>
+          <li>Não jogue lixo na lagoa nem nos bueiros.</li>
+          <li>Denuncie despejo irregular à Sema ou à Caema.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NATUREZA ================= -->
+<section class="secao mangue" id="natureza" aria-labelledby="t-natureza">
+  <div class="miolo">
+    <p class="sobretitulo">Natureza</p>
+    <h2 id="t-natureza">Quem vive na lagoa</h2>
+    <p class="intro">Mesmo no meio de prédios, a lagoa abriga aves, répteis, peixes e crustáceos. Muitas famílias do entorno ainda vivem da pesca artesanal.</p>
+    <div class="grade-especies">
+      <article class="especie">
+        <img src="assets/img/fotos/garcas-p.webp" width="800" height="788" loading="lazy" alt="Duas garças, uma escura e uma branca, pescando na água rasa">
+        <div><h3>Garças</h3><p>As mais fáceis de ver. Ficam paradas na água rasa esperando um peixe passar.</p></div>
+      </article>
+      <article class="especie">
+        <img src="assets/img/fotos/iguana-p.webp" width="800" height="600" loading="lazy" alt="Iguana verde-acinzentada entre a vegetação do mangue">
+        <div><h3>Iguana <em class="cientifico">Iguana iguana</em></h3><p>Vive nas árvores da margem e adora tomar sol nos galhos. É herbívora: come folhas, flores e frutos.</p></div>
+      </article>
+      <article class="especie">
+        <img src="assets/img/fotos/ilhas-de-mangue-p.webp" width="800" height="600" loading="lazy" alt="Ilhas de vegetação de mangue no meio da água, com prédios ao fundo">
+        <div><h3>Mangue</h3><p>Mangue-branco e siriba (mangue-preto) formam ilhas no meio da água. Também aparecem palmeiras de babaçu.</p></div>
+      </article>
+      <article class="especie">
+        <img class="foto-peixe" src="assets/img/fotos/camurim-p.webp" width="800" height="360" loading="lazy" alt="Camurim, peixe prateado com uma linha escura ao longo do corpo, sobre fundo azul">
+        <div><h3>Peixes</h3><p>Cerca de 40 espécies já registradas, como camurim (na foto), curimã, urubarana, xaréu, pampo e camurupim.</p></div>
+      </article>
+      <article class="especie">
+        <img src="assets/img/fotos/caranguejo-mangue-p.webp" width="800" height="538" loading="lazy" alt="Caranguejo vermelho e azul agarrado às raízes do mangue">
+        <div><h3>Caranguejos e siris</h3><p>O aratu sobe nas árvores do mangue. Também vivem ali o siri-azul e o chama-maré, aquele de uma garra gigante. Na foto, um caranguejo no mangue do Bacanga, em São Luís.</p></div>
+      </article>
+      <article class="especie">
+        <img src="assets/img/fotos/tarrafeiro-p.webp" width="500" height="612" loading="lazy" alt="Pescador com água pela cintura lançando uma tarrafa">
+        <div><h3>Pesca artesanal</h3><p>Pescadores de tarrafa e de canoa ainda tiram sustento da lagoa. São parte da história dela.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= O QUE FAZER ================= -->
+<section class="secao escura" id="passeio" aria-labelledby="t-passeio">
+  <div class="miolo">
+    <p class="sobretitulo">Passeio</p>
+    <h2 id="t-passeio">O que fazer na lagoa</h2>
+    <div class="grade-atracoes">
+      <article class="atracao">
+        <img src="assets/img/fotos/calcadao-coqueiros-p.webp" width="800" height="600" loading="lazy" alt="Calçadão largo com coqueiros e a lagoa ao lado">
+        <h3>Caminhar e pedalar</h3>
+        <p>Pistas de cooper e ciclovia contornam a lagoa e lotam no fim da tarde.</p>
+      </article>
+      <article class="atracao">
+        <img src="assets/img/fotos/quiosques-p.webp" width="800" height="600" loading="lazy" alt="Quiosques com cobertura de palha à beira da lagoa">
+        <h3>Comer e beber</h3>
+        <p>O cantinho mais animado fica do lado de dentro da lagoa, perto da Rua das Samambaias e da Av. Professor Mário Meirelles, onde fica o Big Joe. São mais de uma dúzia de bares e restaurantes colados um no outro, com hambúrguer, petiscos, sushi, comida oriental, tapioca e comida regional. Na Praça da Lagoa ainda há quiosques à beira d’água.</p>
+      </article>
+      <article class="atracao">
+        <img src="assets/img/fotos/calcadao-mosaico-p.webp" width="800" height="600" loading="lazy" alt="Calçadão com banco sinuoso de mosaico e as velas coloridas ao fundo">
+        <h3>Praticar esportes</h3>
+        <p>Arena de beach soccer, pista de skate e BMX, quadras de tênis e poliesportivas, além de academias ao ar livre.</p>
+      </article>
+      <article class="atracao atracao-destaque">
+        <img src="assets/img/fotos/praca-aymar-mesquita-p.webp" width="800" height="491" loading="lazy" alt="Praça Aymar Mesquita: parquinho com balanços adaptados para cadeira de rodas e piso colorido">
+
+        <h3>Levar as crianças</h3>
+        <p>A Praça Aymar Mesquita, inaugurada em junho de 2026, tem quase 3 mil m² com brinquedos adaptados, mapa tátil e design universal, pensada para crianças com deficiência e neurodivergentes. E para todas as outras também.</p>
+      </article>
+      <article class="atracao">
+        <img src="assets/img/fotos/monumento-velas-p.webp" width="800" height="533" loading="lazy" alt="Escultura gigante em forma de velas de barco coloridas, vermelha, azul e amarela">
+        <h3>Ver arte pública</h3>
+        <p>As velas gigantes do Calçadão das Velas são um dos símbolos da lagoa. Na Praça Poeta José Chagas há uma estátua do escritor maranhense.</p>
+      </article>
+      <article class="atracao">
+        <img src="assets/img/fotos/por-do-sol-panoramico-p.webp" width="800" height="450" loading="lazy" alt="Pôr do sol alaranjado refletido na lagoa, visto do alto">
+        <h3>Ver o pôr do sol</h3>
+        <p>O horário mais bonito e mais movimentado. Chegue lá pelas 17h30 e escolha um lugar na margem.</p>
+      </article>
+    </div>
+    <h3 class="subtitulo" id="t-momentos">A lagoa ao longo do dia</h3>
+    <p class="intro">Toque num horário para ver como a lagoa muda.</p>
+    <div class="momentos" id="momentos">
+      <figure class="momentos-palco" id="momento-painel" role="tabpanel" aria-live="polite">
+        <img id="momento-img" src="assets/img/fotos/reflexo-predios-g.webp" width="960" height="720" alt="Prédios refletidos na água calma da lagoa" loading="lazy">
+        <figcaption>
+          <strong id="momento-titulo">Manhã</strong>
+          <span id="momento-texto">Água calma e temperatura mais amena. É a hora preferida de quem caminha, corre e pedala em volta da lagoa.</span>
+          <small id="momento-credito">Foto: Cidicastro · CC BY-SA 4.0</small>
+        </figcaption>
+      </figure>
+      <div class="momentos-botoes" role="tablist" aria-labelledby="t-momentos">
+        <button type="button" role="tab" aria-controls="momento-painel" class="m-manha" aria-selected="true"
+          data-img="reflexo-predios" data-alt="Prédios refletidos na água calma da lagoa" data-titulo="Manhã"
+          data-texto="Água calma e temperatura mais amena. É a hora preferida de quem caminha, corre e pedala em volta da lagoa."
+          data-credito="Foto: Cidicastro · CC BY-SA 4.0"><strong>Manhã</strong><span>Água calma</span></button>
+        <button type="button" role="tab" aria-controls="momento-painel" class="m-meio-dia" aria-selected="false"
+          data-img="meio-dia-calcadao" data-alt="Calçadão com coqueiros, céu azul e a lagoa ao fundo" data-titulo="Meio-dia"
+          data-texto="Sol forte e céu azul: a água fica azul também. O calor aperta, então procure a sombra dos coqueiros e beba bastante água."
+          data-credito="Foto: Fernando Pangaré · CC BY-NC 2.0"><strong>Meio-dia</strong><span>Sol forte</span></button>
+        <button type="button" role="tab" aria-controls="momento-painel" class="m-tarde" aria-selected="false"
+          data-img="ceu-dramatico" data-alt="Sol se pondo entre nuvens escuras sobre a lagoa" data-titulo="Fim de tarde"
+          data-texto="O sol se põe atrás dos prédios e pinta a lagoa de laranja. É o horário mais bonito e o mais movimentado. Chegue lá pelas 17h30."
+          data-credito="Foto: Jennifer Nayara Humbelino de Carvalho · CC BY-SA 4.0"><strong>Fim de tarde</strong><span>Pôr do sol</span></button>
+        <button type="button" role="tab" aria-controls="momento-painel" class="m-noite" aria-selected="false"
+          data-img="noite-ponta-do-farol" data-alt="Prédios e avenidas iluminados ao anoitecer, com água à esquerda" data-titulo="Noite"
+          data-texto="As luzes dos prédios se refletem na água e os bares e restaurantes enchem. Na foto, o anoitecer visto da Ponta do Farol, bairro vizinho da lagoa."
+          data-credito="Foto: Miguel Oliverr · CC BY-SA 4.0"><strong>Noite</strong><span>Luzes acesas</span></button>
+        <button type="button" role="tab" aria-controls="momento-painel" class="m-chuva" aria-selected="false"
+          data-img="tempo-nublado" data-alt="Lagoa sob céu carregado de nuvens, com uma canoa ao longe" data-titulo="Tempo de chuva"
+          data-texto="De janeiro a junho é a época das chuvas em São Luís. O céu fecha, a lagoa fica cinzenta e recebe mais água doce dos igarapés e da rede de drenagem."
+          data-credito="Foto: Luís Guilherme · CC BY-SA 2.0"><strong>Chuva</strong><span>Céu fechado</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERPENTE ================= -->
+<section class="secao noite" id="serpente" aria-labelledby="t-serpente">
+  <svg class="serpente-arte" viewBox="0 0 1200 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <path class="serpente-corpo" d="M-40 170 C 80 90, 160 250, 280 170 S 480 90, 600 170 S 800 250, 920 170 S 1120 90, 1240 170" fill="none" stroke="url(#g-serpente)" stroke-width="34" stroke-linecap="round"/>
+    <defs><linearGradient id="g-serpente" x1="0" x2="1"><stop offset="0" stop-color="#2f8f6b"/><stop offset=".5" stop-color="#f6a23c"/><stop offset="1" stop-color="#d9527a"/></linearGradient></defs>
+    <rect x="0" y="182" width="1200" height="80" fill="#0a0f2b" opacity=".85"/>
+  </svg>
+  <div class="miolo duas-colunas">
+    <div>
+      <p class="sobretitulo">Lenda</p>
+      <h2 id="t-serpente">A Serpente Encantada</h2>
+      <p>Diz a lenda que uma serpente gigante dorme nas galerias subterrâneas de São Luís e não para de crescer. Numa das versões, a cabeça está na Fonte do Ribeirão, a barriga sob a Igreja do Carmo e a cauda na Igreja de São Pantaleão. No dia em que a cabeça alcançar o rabo, a ilha afunda no mar.</p>
+      <p>Professores e ecologistas usam a lenda como metáfora da fragilidade da ilha. Faz sentido: São Luís depende do equilíbrio entre mar, mangue e cidade.</p>
+    </div>
+    <div class="serpente-lado">
+    <figure class="foto-moldura">
+      <img src="assets/img/fotos/serpente-2008-p.webp"
+           srcset="assets/img/fotos/serpente-2008-p.webp 800w, assets/img/fotos/serpente-2008-g.webp 1024w"
+           sizes="(min-width: 900px) 45vw, 100vw" width="1024" height="768" loading="lazy"
+           alt="Partes coloridas da escultura da serpente saindo da água da lagoa, com prédios e mangue ao fundo">
+      <figcaption>A Serpente original, em 2008. Foto: Felipe Asmar · <a href="https://creativecommons.org/licenses/by-nc/2.0/deed.pt-br">CC BY-NC 2.0</a></figcaption>
+    </figure>
+    <div class="cartao cartao-escuro">
+      <h3>A escultura na lagoa</h3>
+      <p>Em dezembro de 2001, o artista maranhense <strong>Jesus Santos</strong> (1950–2024) colocou na lagoa uma serpente de <strong>74 metros</strong>. Com o tempo ela se desmanchou e, em 2019, estava quase toda submersa.</p>
+      <p>Restaurada pelo Governo do Maranhão, com as cores recuperadas, ela voltou à água em abril de 2026. O projeto prevê iluminação noturna, fogo pela boca e jatos d’água sincronizados com música. Alguns já a chamam de <em>Lulu</em>.</p>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALERIA ================= -->
+<section class="secao escura" id="galeria" aria-labelledby="t-galeria">
+  <div class="miolo">
+    <p class="sobretitulo">Galeria</p>
+    <h2 id="t-galeria">A lagoa em fotos</h2>
+    <div class="filtros" role="group" aria-label="Filtrar fotos">
+      <button type="button" data-filtro="todas" aria-pressed="true">Todas</button>
+      <button type="button" data-filtro="paisagem" aria-pressed="false">Paisagem</button>
+      <button type="button" data-filtro="natureza" aria-pressed="false">Natureza</button>
+      <button type="button" data-filtro="lazer" aria-pressed="false">Lazer</button>
+      <button type="button" data-filtro="gente" aria-pressed="false">Gente</button>
+    </div>
+    <ul class="grade-galeria" id="grade-galeria"><!-- preenchida por assets/js/main.js --></ul>
+    <p class="nota">Toque numa foto para ampliar. Todas têm licença livre, e os autores estão em “Fontes e créditos”, no fim da página. Algumas são de lugares vizinhos ou da região de São Luís, e a legenda avisa quando for o caso.</p>
+  </div>
+</section>
+
+<dialog class="visor" id="visor" aria-label="Foto ampliada">
+  <figure>
+    <img id="visor-img" alt="">
+    <figcaption><span id="visor-legenda"></span> <small id="visor-credito"></small></figcaption>
+  </figure>
+  <button type="button" class="visor-fechar" aria-label="Fechar">✕</button>
+  <button type="button" class="visor-ant" aria-label="Foto anterior">‹</button>
+  <button type="button" class="visor-prox" aria-label="Próxima foto">›</button>
+</dialog>
+
+<!-- ================= COMO CHEGAR ================= -->
+<section class="secao clara" id="como-chegar" aria-labelledby="t-chegar">
+  <div class="miolo">
+    <p class="sobretitulo">Como chegar</p>
+    <h2 id="t-chegar">Onde fica a lagoa</h2>
+    <div class="mapa-area">
+      <div class="mapa-caixa">
+        <div class="mapa-trocar" role="group" aria-label="Tipo de mapa">
+          <button type="button" data-camada="mapa" aria-pressed="false">Mapa</button>
+          <button type="button" data-camada="satelite" aria-pressed="true">Satélite</button>
+        </div>
+        <div id="mapa" class="mapa" role="region" aria-label="Mapa interativo da Lagoa da Jansen"></div>
+        <p class="mapa-aviso" id="mapa-aviso" hidden>Sem internet: mostrando a foto de satélite salva no site.</p>
+      </div>
+      <div class="mapa-info">
+        <p>A lagoa fica ao lado da <strong>Avenida Ana Jansen</strong>, entre a Ponta d’Areia e o São Francisco, a cerca de 4 km do Centro Histórico. Dá para ir de carro, de aplicativo ou de bicicleta pela orla.</p>
+        <div class="botoes-rota">
+          <a class="btn btn-principal" id="rota-google" href="https://www.google.com/maps/dir/?api=1&amp;destination=-2.4964,-44.2946" target="_blank" rel="noopener">Traçar rota no Google Maps</a>
+          <a class="btn btn-contorno" id="rota-waze" href="https://waze.com/ul?ll=-2.4964,-44.2946&amp;navigate=yes" target="_blank" rel="noopener">Abrir no Waze</a>
+        </div>
+        <h3>Pontos no mapa</h3>
+        <ul class="lista-pontos" id="lista-pontos"><!-- preenchida por assets/js/mapa.js --></ul>
+        <h3>Dicas</h3>
+        <ul class="lista-dicas">
+          <li>Leve água, boné e protetor solar.</li>
+          <li>Combine a visita com a Praia da Ponta d’Areia e o Espigão Costeiro, que ficam ao lado.</li>
+          <li>Respeite as áreas de mangue: elas são protegidas.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DÚVIDAS ================= -->
+<section class="secao escura" id="duvidas" aria-labelledby="t-duvidas">
+  <div class="miolo estreito">
+    <p class="sobretitulo">Dúvidas</p>
+    <h2 id="t-duvidas">Pergunte sobre a lagoa</h2>
+
+    <!-- ===== CAIXA DO CHAT =====
+         Com o webchat da Zenvia ligado no config.js, o chat aparece aqui dentro.
+         Sem ele (ou sem internet), a caixa mostra as "respostas rápidas",
+         montadas a partir das perguntas frequentes logo abaixo. -->
+    <div class="chat-caixa" id="chat-caixa" role="region" aria-labelledby="chat-nome" tabindex="-1">
+      <div class="chat-topo">
+        <span class="chat-avatar" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><circle cx="16" cy="14" r="7" fill="#f6a23c"/><rect x="4" y="20" width="24" height="3" rx="1.5" fill="#fff7ec"/><rect x="8" y="25" width="16" height="2.4" rx="1.2" fill="#fff7ec" opacity=".6"/></svg>
+        </span>
+        <div>
+          <strong id="chat-nome">Assistente da Lagoa</strong>
+          <span class="chat-status" id="chat-status">Respostas rápidas</span>
+        </div>
+      </div>
+      <div class="chat-corpo" id="chat-zenvia">
+        <div class="chat-local" id="chat-local">
+          <div class="chat-mensagens" id="chat-mensagens" aria-live="polite">
+            <p class="balao balao-bot">Oi! Eu sou o assistente da Lagoa da Jansen. Toque numa pergunta aqui embaixo que eu respondo.</p>
+          </div>
+          <div class="chat-sugestoes" id="chat-sugestoes" role="group" aria-label="Perguntas rápidas"></div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="subtitulo" id="t-faq">Perguntas frequentes</h3>
+    <div class="faq" aria-labelledby="t-faq">
+      <details><summary>A Lagoa da Jansen é natural?</summary><p>Não. Ela se formou nos anos 1970, quando o aterro da Avenida Ana Jansen bloqueou o Igarapé da Jansen e represou a água onde antes havia manguezal.</p></details>
+      <details data-rapida><summary>É lagoa ou laguna?</summary><p>Tecnicamente é uma laguna, porque se comunica com o mar por um canal com comporta. O nome “lagoa” ficou pelo costume.</p></details>
+      <details><summary>Qual é o tamanho dela?</summary><p>O parque tem cerca de 150 hectares. A água tem profundidade média de 1 metro e chega a 3,5 metros no ponto mais fundo.</p></details>
+      <details data-rapida><summary>Posso tomar banho na lagoa?</summary><p>Não é recomendado. A lagoa ainda recebe esgoto de ligações irregulares, e não encontramos nenhum laudo oficial dizendo que a água é própria para banho.</p></details>
+      <details><summary>Dá para comer o peixe pescado lá?</summary><p>Uma pesquisa divulgada em 2016 encontrou contaminação no pescado da lagoa e não recomendou o consumo. Não encontramos laudo mais recente. Na dúvida, evite.</p></details>
+      <details data-rapida><summary>Por que às vezes tem mau cheiro?</summary><p>Por causa da eutrofização: o esgoto traz nutrientes, as algas se multiplicam e morrem, e a decomposição consome o oxigênio da água. Sem oxigênio, surge o gás sulfídrico, com cheiro de ovo podre. Veja a explicação completa na seção Ciência.</p></details>
+      <details data-rapida><summary>O que está sendo feito para melhorar?</summary><p>Desde 2015, a Caema eliminou mais de 100 pontos de esgoto. O governo opera a comporta para renovar a água, ajusta o canal com o mar e investiu mais de R$ 20 milhões na revitalização do parque. A Sema monitora a qualidade da água.</p></details>
+      <details><summary>Quem cuida da lagoa?</summary><p>A gestão ambiental é da Sema (Secretaria de Estado do Meio Ambiente). A Sinfra cuida das comportas e das obras, a Segov coordena a revitalização e a Caema cuida do esgoto.</p></details>
+      <details data-rapida><summary>A Serpente voltou?</summary><p>Sim. A escultura de 74 metros de Jesus Santos foi restaurada e devolvida à lagoa em abril de 2026. Os efeitos de fogo, água e luz ainda estavam sendo instalados.</p></details>
+      <details data-rapida><summary>Tem espaço para crianças?</summary><p>Tem. A Praça Aymar Mesquita, inaugurada em 7 de junho de 2026, foi pensada para crianças com deficiência e neurodivergentes, com brinquedos adaptados e mapa tátil. Também há parquinho na Praça Bolbi Miranda.</p></details>
+      <details data-rapida><summary>Onde comer na lagoa?</summary><p>O cantinho mais animado fica do lado de dentro da lagoa, perto da Rua das Samambaias e da Av. Professor Mário Meirelles, onde fica o Big Joe: são mais de uma dúzia de bares e restaurantes, com hambúrguer, petiscos, sushi, comida oriental, tapioca e comida regional. Também há quiosques na Praça da Lagoa. Veja no mapa, em Como chegar.</p></details>
+      <details><summary>Qual o melhor horário para visitar?</summary><p>O fim da tarde, por causa do pôr do sol. De manhã cedo é ótimo para caminhar. À noite, os bares e restaurantes ficam abertos.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- Balão no canto da tela: leva até a caixa do chat em "Dúvidas" -->
+<a class="balao-chat" id="balao-chat" href="#chat-caixa" aria-label="Tirar dúvidas no chat da lagoa">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" fill="currentColor"/><circle cx="8" cy="11" r="1.4" fill="#141b45"/><circle cx="12" cy="11" r="1.4" fill="#141b45"/><circle cx="16" cy="11" r="1.4" fill="#141b45"/></svg>
+  <span>Dúvidas?</span>
+</a>
+
+<!-- ================= SOBRE O PROJETO ================= -->
+<section class="secao crepusculo" id="projeto" aria-labelledby="t-projeto">
+  <div class="miolo duas-colunas alinhar-topo">
+    <div>
+      <p class="sobretitulo">Sobre o projeto</p>
+      <h2 id="t-projeto">Um projeto da <span data-config="feira">Feira de Ciências Maktub</span></h2>
+      <p>Este site foi feito por estudantes para mostrar a Lagoa da Jansen como ela é: bonita, cheia de história e de vida, e ainda em recuperação. Todas as informações vêm de pesquisas, leis e reportagens, listadas abaixo.</p>
+      <dl class="ficha" id="ficha-projeto"><!-- preenchida a partir do config.js --></dl>
+    </div>
+    <div class="qr-caixa" id="qr-caixa" hidden>
+      <div id="qr-codigo" class="qr-codigo"></div>
+      <p>Aponte a câmera do celular para abrir este site.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FONTES E CRÉDITOS ================= -->
+<section class="secao escura fontes" id="fontes" aria-labelledby="t-fontes">
+  <div class="miolo">
+    <h2 id="t-fontes">Fontes e créditos</h2>
+    <details>
+      <summary>Fontes da pesquisa</summary>
+      <ul class="lista-fontes">
+        <li><a href="https://pt.wikipedia.org/wiki/Parque_Ecol%C3%B3gico_da_Lagoa_da_Jansen">Parque Ecológico da Lagoa da Jansen</a>, Wikipédia</li>
+        <li><a href="https://revistasuninter.com/revistameioambiente/index.php/meioAmbiente/article/view/948/466">Estudo sobre a Laguna da Jansen</a>, Revista Meio Ambiente e Sustentabilidade (Uninter)</li>
+        <li><a href="https://www.periodicoseletronicos.ufma.br/index.php/blabohidro/article/download/2126/7910/44755">Ictiofauna da Laguna da Jansen</a>, Boletim do Laboratório de Hidrobiologia (UFMA)</li>
+        <li><a href="https://imirante.com/oestadoma/noticias/2017/09/02/despoluicao-da-lagoa-da-jansen-sera-entregue">Segunda etapa da despoluição será entregue</a>, O Estado do Maranhão, 2017</li>
+        <li><a href="https://oimparcial.com.br/cidades/2016/02/peixe-da-lagoa-da-jansen-nao-pode-ser-consumido/">Peixe da Lagoa da Jansen não pode ser consumido</a>, O Imparcial, 2016</li>
+        <li><a href="https://oimparcial.com.br/cidades/2019/02/serpente-da-lagoa-da-jansen-agoniza-diante-de-descaso/">Serpente da Lagoa agoniza diante de descaso</a>, O Imparcial, 2019</li>
+        <li><a href="https://oimparcial.com.br/cidades/2022/06/baixo-nivel-e-problemas-na-comporta-na-lagoa-da-jansen-geram-transtornos/">Baixo nível e problemas na comporta</a>, O Imparcial, 2022</li>
+        <li><a href="https://segov.ma.gov.br/noticias/situacao-da-lagoa-da-jansen-e-acompanhada-de-perto-pelo-governo-do-estado">Situação da Lagoa é acompanhada pelo Governo</a>, Segov-MA</li>
+        <li><a href="https://oimparcial.com.br/noticias/2025/01/lagoa-da-jansen-passa-por-revitalizacao-para-esporte-lazer-e-turismo/">Lagoa passa por revitalização</a>, O Imparcial, 2025</li>
+        <li><a href="https://www.portaldoitaqui-bacanga.com.br/2025/09/governo-do-maranhao-promove-recuperacao.html">Governo promove recuperação da Lagoa</a>, Portal Itaqui-Bacanga, 2025</li>
+        <li><a href="https://agendamaranhao.com.br/2026/04/18/serpente-comeca-a-circular-pela-lagoa-da-jansen/">Serpente começa a circular pela Lagoa</a>, Agenda Maranhão, 2026</li>
+        <li><a href="https://jornalpequeno.com.br/2026/06/10/praca-totalmente-inclusiva-para-criancas-com-deficiencia-e-inaugurada-na-lagoa-da-jansen/">Praça inclusiva é inaugurada na Lagoa</a>, Jornal Pequeno, 2026</li>
+        <li><a href="https://imirante.com/noticias/sao-luis/2026/11/04/lagoa-jansen-mau-cheiro-vem-esgoto-clandestino">Mau cheiro é causado por esgoto clandestino, diz Caema</a>, Imirante, 2026</li>
+        <li><a href="https://horaextra.slz.br/2026/11/11/acao-conjunta-governo-tenta-solucionar-mau-cheiro-na-lagoa-da-jansen-mas-a-catinga-continua/">Ação conjunta tenta solucionar mau cheiro</a>, Hora Extra, 2026</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Créditos das fotos</summary>
+      <ul class="lista-fontes" id="creditos-fotos"><!-- preenchida por assets/js/main.js --></ul>
+      <p class="nota">Fotos do Wikimedia Commons e do Flickr, redimensionadas para a web. As fotos CC BY-SA continuam sob a mesma licença. As fotos com licença NC (não comercial) e a foto de divulgação da Praça Aymar Mesquita são usadas porque este é um projeto escolar, sem fins lucrativos.</p>
+    </details>
+    <details>
+      <summary>Mapa e fontes tipográficas</summary>
+      <ul class="lista-fontes">
+        <li>Mapa: <a href="https://leafletjs.com">Leaflet</a>. Contorno da lagoa e pontos: © <a href="https://www.openstreetmap.org/copyright">colaboradores do OpenStreetMap</a>.</li>
+        <li>Mapa de ruas e imagens de satélite: Esri (com dados de HERE, Garmin, Maxar, Earthstar Geographics e OpenStreetMap).</li>
+        <li>Fontes: Bricolage Grotesque e Source Sans 3 (licença SIL Open Font).</li>
+      </ul>
+    </details>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <p>Lagoa da Jansen · São Luís, Maranhão</p>
+  <p><span data-config="feira">Feira de Ciências Maktub</span><span data-config="escola" data-prefixo=" · "></span></p>
+</footer>
+
+<script src="config.js"></script>
+<script src="assets/data/fotos.js"></script>
+<script src="assets/data/mapa.js"></script>
+<script src="assets/vendor/leaflet/leaflet.js"></script>
+<script src="assets/vendor/qrcode/qrcode.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/mapa.js"></script>
+
+<!-- ===== WEBCHAT ZENVIA =====
+     O chat é ligado pelo config.js (ID do Web Chat + "ativo": true) e aparece
+     dentro da caixa da seção "Dúvidas". Não precisa colar código aqui.
+     ===== FIM WEBCHAT ZENVIA ===== -->
+</body>
+</html>
