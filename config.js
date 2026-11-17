@@ -31,8 +31,8 @@ window.SITE_CONFIG = {
      Enquanto o chat estiver desligado (ou sem internet), a caixa mostra
      "respostas rápidas" com as perguntas frequentes do site. */
   webchat: {
-    ativo: false,
-    id: "",
+    ativo: true,
+    id: "16ed62c630341e78f6ab09e2652be077",
     script: "https://static.zenvia.com/embed/js/zenvia-chat.min.js",
   },
 };
