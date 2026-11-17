@@ -21,7 +21,7 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v=3">
 </head>
 <body>
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
@@ -468,7 +468,11 @@
         </span>
         <div>
           <strong id="chat-nome">Assistente da Lagoa</strong>
-          <span class="chat-status" id="chat-status">Respostas rápidas</span>
+          <span class="chat-linha">
+            <span class="chat-status" id="chat-status">Respostas rápidas</span>
+            <!-- Aparece só com o chat da Zenvia ligado: a IA demora para responder -->
+            <span class="chat-tempo" id="chat-tempo" hidden>a resposta pode levar até 1 minuto</span>
+          </span>
         </div>
       </div>
       <div class="chat-corpo" id="chat-zenvia">
@@ -567,12 +571,12 @@
 </footer>
 
 <script src="config.js"></script>
-<script src="assets/data/fotos.js"></script>
-<script src="assets/data/mapa.js"></script>
+<script src="assets/data/fotos.js?v=2"></script>
+<script src="assets/data/mapa.js?v=2"></script>
 <script src="assets/vendor/leaflet/leaflet.js"></script>
 <script src="assets/vendor/qrcode/qrcode.min.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/mapa.js"></script>
+<script src="assets/js/main.js?v=2"></script>
+<script src="assets/js/mapa.js?v=2"></script>
 
 <!-- ===== WEBCHAT ZENVIA =====
      O chat é ligado pelo config.js (ID do Web Chat + "ativo": true) e aparece

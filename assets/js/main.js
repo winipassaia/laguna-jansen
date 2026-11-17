@@ -56,6 +56,7 @@
   var corpoChat = $('#chat-zenvia');
   var localChat = $('#chat-local');
   var statusChat = $('#chat-status');
+  var tempoChat = $('#chat-tempo');
   var mensagens = $('#chat-mensagens');
   var sugestoes = $('#chat-sugestoes');
 
@@ -101,6 +102,7 @@
       sala.remove();
       localChat.hidden = false;
       statusChat.textContent = 'Respostas rápidas';
+      if (tempoChat) tempoChat.hidden = true;
       if (motivo) console.warn('Webchat Zenvia:', motivo);
     };
     // A Zenvia monta o chat dentro de um "shadow DOM" da sala. Só escondemos as
@@ -117,6 +119,7 @@
           raiz.appendChild(css);
           localChat.hidden = true;
           statusChat.textContent = 'Online';
+          if (tempoChat) tempoChat.hidden = false;
           caixaChat.classList.add('com-zenvia');
         } else if (++tentativas > 40) {
           clearInterval(vigia);

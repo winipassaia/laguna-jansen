@@ -385,6 +385,13 @@ figcaption { font-size: .8rem; opacity: .75; margin-top: .5rem; }
 .chat-status { font-size: .82rem; color: var(--text-soft); display: inline-flex; align-items: center; gap: .35rem; }
 .chat-status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--sun); }
 .com-zenvia .chat-status::before { background: #4ade80; }
+.chat-linha { display: flex; flex-wrap: wrap; align-items: center; column-gap: .4rem; }
+.chat-tempo { font-size: .82rem; color: var(--text-soft); }
+.chat-tempo::before { content: "·"; margin-right: .4rem; }
+@media (max-width: 520px) {
+  .chat-tempo { flex-basis: 100%; }
+  .chat-tempo::before { display: none; }
+}
 .chat-corpo { height: clamp(420px, 62vh, 540px); position: relative; }
 .chat-sala { position: absolute; inset: 0; }
 .chat-local { height: 100%; display: flex; flex-direction: column; }
